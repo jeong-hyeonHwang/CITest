@@ -21,6 +21,12 @@ class ViewController: UIViewController {
             return str
         }()
         print(str)
+        
+        let attempStr: String = {
+            guard let str = Bundle.main.object(forInfoDictionaryKey: "SEC_TEST_KEY") as? String else { return "" }
+            return str
+        }()
+        print(attempStr)
     }
 }
 
