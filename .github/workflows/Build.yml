@@ -14,6 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Setup secrets.xcconfig
+      run:  |
+        echo '
+        TEST_KEY = $secrets.TEST.KEY
+        ' >> ./CITest/CITest/Secrets.xcconfig
     - name: Build Xcode
       run: |
         xcodebuild build -project ./CITest/CITest.xcodeproj -scheme CITest -destination "platform=iOS Simulator,name=iPhone 14,OS=latest"
