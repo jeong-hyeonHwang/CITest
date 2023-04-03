@@ -354,7 +354,7 @@
 				3A8C31D729DAAB40004A4B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		3A8C31D829DAAB40004A4B84 /* Build configuration list for PBXNativeTarget "CITest" */ = {
 			isa = XCConfigurationList;
@@ -363,7 +363,7 @@
 				3A8C31DA29DAAB40004A4B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
