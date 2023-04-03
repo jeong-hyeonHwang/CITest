@@ -11,9 +11,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        plistTest()
     }
 
-
+    private func plistTest() {
+        let str: String = {
+            guard let privatePlist = Bundle.main.url(forResource: "Private", withExtension: "plist"), let dictionary = NSDictionary(contentsOf: privatePlist), let link: String = dictionary["test"] as? String else { return "" }
+            return link
+        }()
+        print(str)
+    }
 }
 
