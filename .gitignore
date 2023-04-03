@@ -1,3 +1,6 @@
+
+*.xcconfig
+
 CITest/CITest/Private.plist
 Pods/
 .DS_Store
