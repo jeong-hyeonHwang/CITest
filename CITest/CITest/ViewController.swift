@@ -12,12 +12,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         plistTest()
+        
     }
 
     private func plistTest() {
         let str: String = {
-            guard let privatePlist = Bundle.main.url(forResource: "Private", withExtension: "plist"), let dictionary = NSDictionary(contentsOf: privatePlist), let link: String = dictionary["test"] as? String else { return "" }
-            return link
+            guard let str = Bundle.main.object(forInfoDictionaryKey: "TEST_KEY") as? String else { return "" }
+            return str
         }()
         print(str)
     }
