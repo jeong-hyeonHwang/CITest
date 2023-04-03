@@ -170,6 +170,7 @@
 /* Begin XCBuildConfiguration section */
 		3A8C31D629DAAB40004A4B84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB1FDEA29DB509B001AFFE0 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -284,6 +285,7 @@
 		};
 		3A8C31D929DAAB40004A4B84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB1FDEA29DB509B001AFFE0 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,7 +350,7 @@
 				3A8C31D729DAAB40004A4B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3A8C31D829DAAB40004A4B84 /* Build configuration list for PBXNativeTarget "CITest" */ = {
 			isa = XCConfigurationList;
@@ -357,7 +359,7 @@
 				3A8C31DA29DAAB40004A4B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
