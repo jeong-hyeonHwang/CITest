@@ -1,0 +1,19 @@
+name: CI CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build Xcode
+      run: |
+        xcodebuild build -project ./CITest/CITest.xcodeproj -scheme CITest -destination "platform=iOS Simulator,name=iPhone 14,OS=latest"
