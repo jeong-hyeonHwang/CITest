@@ -14,11 +14,25 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Setup Private.plist
+      run:  |
+        echo '
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+        <plist version="1.0">
+        <dict>
+        	<key>TEST_KEY</key>
+        	<string>$secrets.TEST_KEY</string>
+        </dict>
+        </plist>
+        ' >> ./CITest/CITest/Private.plist
+
     - name: Setup secrets.xcconfig
       run:  |
         echo '
-        TEST_KEY = $secrets.TEST.KEY
+        TEST_KEY = $secrets.TEST_KEY
         ' >> ./CITest/CITest/Secrets.xcconfig
+
     - name: Build Xcode
       run: |
         xcodebuild build -project ./CITest/CITest.xcodeproj -scheme CITest -destination "platform=iOS Simulator,name=iPhone 14,OS=latest"
