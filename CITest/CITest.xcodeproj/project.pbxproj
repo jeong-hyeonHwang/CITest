@@ -13,6 +13,7 @@
 		3A8C31CF29DAAB3F004A4B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C31CD29DAAB3F004A4B84 /* Main.storyboard */; };
 		3A8C31D129DAAB40004A4B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C31D029DAAB40004A4B84 /* Assets.xcassets */; };
 		3A8C31D429DAAB40004A4B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C31D229DAAB40004A4B84 /* LaunchScreen.storyboard */; };
+		3AB1FDED29DC145D001AFFE0 /* Private.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB1FDEC29DC145D001AFFE0 /* Private.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3A8C31D529DAAB40004A4B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AB1FDEA29DB509B001AFFE0 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		3AB1FDEB29DB5AFF001AFFE0 /* Attempt.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Attempt.xcconfig; sourceTree = "<group>"; };
+		3AB1FDEC29DC145D001AFFE0 /* Private.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Private.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				3A8C31D029DAAB40004A4B84 /* Assets.xcassets */,
 				3A8C31D229DAAB40004A4B84 /* LaunchScreen.storyboard */,
 				3A8C31D529DAAB40004A4B84 /* Info.plist */,
+				3AB1FDEC29DC145D001AFFE0 /* Private.plist */,
 				3AB1FDEA29DB509B001AFFE0 /* Secrets.xcconfig */,
 				3AB1FDEB29DB5AFF001AFFE0 /* Attempt.xcconfig */,
 			);
@@ -131,6 +134,7 @@
 			files = (
 				3A8C31D429DAAB40004A4B84 /* LaunchScreen.storyboard in Resources */,
 				3A8C31D129DAAB40004A4B84 /* Assets.xcassets in Resources */,
+				3AB1FDED29DC145D001AFFE0 /* Private.plist in Resources */,
 				3A8C31CF29DAAB3F004A4B84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,7 +176,7 @@
 /* Begin XCBuildConfiguration section */
 		3A8C31D629DAAB40004A4B84 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AB1FDEB29DB5AFF001AFFE0 /* Attempt.xcconfig */;
+			baseConfigurationReference = 3AB1FDEA29DB509B001AFFE0 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -289,7 +293,7 @@
 		};
 		3A8C31D929DAAB40004A4B84 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AB1FDEB29DB5AFF001AFFE0 /* Attempt.xcconfig */;
+			baseConfigurationReference = 3AB1FDEA29DB509B001AFFE0 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

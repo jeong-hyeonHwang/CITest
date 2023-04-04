@@ -27,6 +27,14 @@ class ViewController: UIViewController {
             return str
         }()
         print(attempStr)
+        
+        let plistStr: String = {
+            guard let plist = Bundle.main.url(forResource: "Private", withExtension: "plist") else { return "" }
+            guard let dictionary = NSDictionary(contentsOf: plist) else { return "" }
+            guard let key = dictionary["TEST_KEY"] as? String else { return "" }
+            return key
+        }()
+        print(plistStr)
     }
 }
 
