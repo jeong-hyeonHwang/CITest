@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A53022029DD4A6F00888CFA /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53021F29DD4A6F00888CFA /* MyViewController.swift */; };
+		3A53022B29E01C6500888CFA /* Snippets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53022A29E01C6500888CFA /* Snippets.swift */; };
 		3A8C31C829DAAB3F004A4B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C31C729DAAB3F004A4B84 /* AppDelegate.swift */; };
 		3A8C31CA29DAAB3F004A4B84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C31C929DAAB3F004A4B84 /* SceneDelegate.swift */; };
 		3A8C31CC29DAAB3F004A4B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C31CB29DAAB3F004A4B84 /* ViewController.swift */; };
@@ -16,7 +18,22 @@
 		3AB1FDED29DC145D001AFFE0 /* Private.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB1FDEC29DC145D001AFFE0 /* Private.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3A36AB602A28CD08001BE444 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3A53021F29DD4A6F00888CFA /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		3A53022A29E01C6500888CFA /* Snippets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippets.swift; sourceTree = "<group>"; };
 		3A8C31C429DAAB3F004A4B84 /* CITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8C31C729DAAB3F004A4B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8C31C929DAAB3F004A4B84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +61,7 @@
 		3A8C31BB29DAAB3F004A4B84 = {
 			isa = PBXGroup;
 			children = (
+				3A53021F29DD4A6F00888CFA /* MyViewController.swift */,
 				3A8C31C629DAAB3F004A4B84 /* CITest */,
 				3A8C31C529DAAB3F004A4B84 /* Products */,
 			);
@@ -63,6 +81,7 @@
 				3A8C31C729DAAB3F004A4B84 /* AppDelegate.swift */,
 				3A8C31C929DAAB3F004A4B84 /* SceneDelegate.swift */,
 				3A8C31CB29DAAB3F004A4B84 /* ViewController.swift */,
+				3A53022A29E01C6500888CFA /* Snippets.swift */,
 				3A8C31CD29DAAB3F004A4B84 /* Main.storyboard */,
 				3A8C31D029DAAB40004A4B84 /* Assets.xcassets */,
 				3A8C31D229DAAB40004A4B84 /* LaunchScreen.storyboard */,
@@ -84,6 +103,7 @@
 				3A8C31C029DAAB3F004A4B84 /* Sources */,
 				3A8C31C129DAAB3F004A4B84 /* Frameworks */,
 				3A8C31C229DAAB3F004A4B84 /* Resources */,
+				3A36AB602A28CD08001BE444 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -101,8 +121,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					3A8C31C329DAAB3F004A4B84 = {
 						CreatedOnToolsVersion = 14.2;
@@ -146,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A53022B29E01C6500888CFA /* Snippets.swift in Sources */,
 				3A8C31CC29DAAB3F004A4B84 /* ViewController.swift in Sources */,
 				3A8C31C829DAAB3F004A4B84 /* AppDelegate.swift in Sources */,
+				3A53022029DD4A6F00888CFA /* MyViewController.swift in Sources */,
 				3A8C31CA29DAAB3F004A4B84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AB1FDEA29DB509B001AFFE0 /* Secrets.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AB1FDEB29DB5AFF001AFFE0 /* Attempt.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
